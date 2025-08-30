@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Слово и Душа</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Lora', serif;
+      background-color: #f8f5f0;
+      color: #333;
+      line-height: 1.8;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+      position: relative;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      color: #1a3a2a;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    .slogan {
+      font-size: 1.4rem;
+      color: #5a6e5a;
+      font-style: italic;
+      margin-bottom: 30px;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1484788984921-0a612e879d7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') no-repeat center center;
+      background-size: cover;
+      height: 500px;
+      position: relative;
+      border-radius: 15px;
+      overflow: hidden;
+      margin: 40px 0;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(26, 58, 42, 0.4);
+      backdrop-filter: blur(2px);
+    }
+
+    .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+      z-index: 2;
+      max-width: 80%;
+    }
+
+    .hero h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      margin: 10px;
+      background-color: #c9a66b;
+      color: #fff;
+      font-family: 'Lora', serif;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #a6854c;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .quote-section {
+      background-color: #f0f0f0;
+      padding: 50px 20px;
+      text-align: center;
+      border-radius: 15px;
+      margin: 40px 0;
+    }
+
+    .quote {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: #2c4a3a;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+      position: relative;
+    }
+
+    .quote::before,
+    .quote::after {
+      content: """;
+      font-size: 3rem;
+      color: #c9a66b;
+    }
+
+    .author {
+      font-style: italic;
+      color: #666;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .logo {
+        font-size: 2.5rem;
+      }
+      .slogan {
+        font-size: 1.1rem;
+      }
+      .hero h2 {
+        font-size: 2rem;
+      }
+      .quote {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="logo">Слово и Душа</div>
+      <div class="slogan">Где живёт поэзия, мысль и воображение</div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Поэзия — это дыхание души</h2>
+        <p>Читайте, пишите, вдохновляйтесь. Здесь каждое слово — живое.</p>
+        <a href="#poetry" class="btn">Читать поэзию</a>
+        <a href="#submit" class="btn">Публиковать своё</a>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <blockquote class="quote">
+        Поэзия — это когда от счастья хочется плакать.
+        <cite class="author">— Иосиф Бродский</cite>
+      </blockquote>
+    </section>
+
+    <section style="text-align: center; margin: 50px 0;">
+      <p>
+        Здесь собираются те, кто верит в силу слова.<br>
+        Исследуйте классику, открывайте современность,<br>
+        и, возможно, найдёте в себе поэта.
+      </p>
+    </section>
+
+    <footer>
+      &copy; 2025 Слово и Душа. Всё ради любви к литературе.<br>
+      Связь: <a href="mailto:slovo.idusha@mail.com" style="color:#c9a66b;">slovo.idusha@mail.com</a>
+    </footer>
+  </div>
+
+  <script>
+    // Смена цитаты каждый день (простая версия)
+    const quotes = [
+      { text: "Слово должно быть живым, как дыхание.", author: "— Анна Ахматова" },
+      { text: "Поэзия — это когда от счастья хочется плакать.", author: "— Иосиф Бродский" },
+      { text: "Творчество — это когда ты не боишься быть собой.", author: "— Неизвестный автор" },
+      { text: "Книга — это разговор с величайшими умами прошлого.", author: "— Рене Декарт" }
+    ];
+
+    const quoteEl = document.querySelector('.quote');
+    const authorEl = document.querySelector('.author');
+
+    const today = new Date().getDate();
+    const quoteIndex = today % quotes.length;
+    const quote = quotes[quoteIndex];
+
+    quoteEl.firstChild.textContent = quote.text;
+    authorEl.textContent = quote.author;
+  </script>
+
+</body>
+</html>
